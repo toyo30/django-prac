@@ -3,3 +3,4 @@
 .bash_profile
 .zshrc
 .python-version
+__pycache__/
