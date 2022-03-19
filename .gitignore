@@ -4,3 +4,4 @@
 .zshrc
 .python-version
 __pycache__/
+.vscode/
