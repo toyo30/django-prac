@@ -9,3 +9,14 @@ def index(request):
     #render 함수. 첫번째 변수 호출 방법, 2번째 변수 호출 값 3번째 변수 데이터
     context = {"date":today}
     return render(request, 'foods/index.html', context=context)
+
+
+
+'''
+def chicken(request):
+    return render(request, 'foods/chicken.html')
+'''
+
+def food_detail(request, food):
+    context = {"name":food}
+    return render(request, 'foods/detail.html',context)
