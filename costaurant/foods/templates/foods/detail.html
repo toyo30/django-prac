@@ -1,1 +1,8 @@
+{% load static %}
+
 <h2>{{name}}</h2>
+<div>{{description}}</div>
+<p>{{price}} 원</p>
+{% comment %} <img src={{img_path}}> 이렇게 못씀 경로가 맞지 않음{% endcomment %}
+{% comment %} <img src={% static {{img_path}} %}> 이렇게 못씀 템플릿 테그안에 중첩사용 안 됨 {% endcomment %}
+<img src={% get_static_prefix %}{{img_path}}>
