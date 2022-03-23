@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     path('index/', views.index),
-    # path('chicken/', views.chicken)
+    # path('chicken/', views.chicken)xw
     path('menu/<str:food>/', views.food_detail)
 ]
